@@ -51,8 +51,8 @@ export class DrawingComponent implements OnInit {
 
         pathEl.setAttribute('d', this.getSinPathMouseDown(e.pageX - this.svgX, e.pageY - this.svgY));
 
-        console.log("e.pageX", e.pageX);
-        console.log("e.pageY", e.pageY);
+       // console.log("e.pageX", e.pageX);
+      //  console.log("e.pageY", e.pageY);
 
         pathEl.setAttribute('id', 'path-graph'+this.cnt);
 
@@ -78,8 +78,8 @@ export class DrawingComponent implements OnInit {
       let sumY = 0;
       let radiusSum = 0;
       let meanRadius;
-      console.log("this.xArray.length", this.xArray.length);
-      console.log("this.yArray.length", this.yArray.length);
+     // console.log("this.xArray.length", this.xArray.length);
+     // console.log("this.yArray.length", this.yArray.length);
 
       for (let i = 0; i < this.xArray.length; i++) {
         sumX += this.xArray[i];
@@ -157,10 +157,10 @@ export class DrawingComponent implements OnInit {
         }
 
 
-        console.log("xMin",xMin);
-        console.log("xMax",xMax);
-        console.log("yMin",yMin);
-        console.log("yMax",yMax);
+       // console.log("xMin",xMin);
+       // console.log("xMax",xMax);
+       // console.log("yMin",yMin);
+        //console.log("yMax",yMax);
 
         var svgNS = 'http://www.w3.org/2000/svg';
 
@@ -265,6 +265,7 @@ export class DrawingComponent implements OnInit {
     this.once = false;
     this.flagCircleSelected = false;
     this.flagLineSelected = false;
+
 
     this.flagCircleSelected = true;
     this.flagLineSelected = false;
