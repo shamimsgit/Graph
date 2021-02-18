@@ -1,0 +1,64 @@
+.btn{
+
+    background: rgb(241, 238, 238);
+    width: 64px;
+    padding: 7px;
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(171, 171, 189);
+    float:left;
+    position:relative;
+    cursor:pointer;
+}
+
+.btn1{
+    position:relative;
+    left:30px;
+}
+
+.btn2{
+    position:relative;
+    left:60px;
+}
+
+.btn3{
+    position:relative;
+    left:90px;
+}
+#drawingBoard{
+
+    border:1px solid black;
+}
+#color-options{
+
+    position:absolute;
+    left:820px;
+    top:10px;
+}
+.cbtn1{
+    position:relative;
+    top:30px;
+    background:green;
+
+}
+.cbtn2{
+    position:relative;
+    top:60px;
+    background:yellow;
+
+}
+.cbtn3{
+    position:relative;
+    top:90px;
+    background:skyblue
+
+}
+.cbtn{
+    width:50px;
+    height:30px;
+    cursor:pointer;
+}
+#options{
+    position:relative;
+    top:20px;
+}
