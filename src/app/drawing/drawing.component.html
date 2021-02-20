@@ -5,15 +5,6 @@
                  
             </g> </svg>
       </div> 
-      <div id="color-options"> 
-        <div class="cbtn cbtn1"  (click)="selectColor(1)"></div> 
-        <div class="cbtn cbtn2"  (click)="selectColor(2)"></div> 
-        <div class="cbtn cbtn3"  (click)="selectColor(3)"></div> 
-      </div>
-      <div id="options"> 
-        <div class="btn btn1" [style.opacity]="flagCircleSelected ? '100' : '0.4'" (click)="selectShapeCircle()">Circle</div> 
-        <div class="btn btn2" [style.opacity]="flagLineSelected ? '100' : '0.4'" (click)="selectShapeLine()">Rectangle</div> 
-        <div class="btn btn3" (click)="clearAll()">Clear All</div> 
-      </div> 
+      <app-toolbar (ShapeCircle)="selectShapeCircle()" (ShapeLine)="selectShapeLine()" (clear)="clearAll()" [flagCircleSelected]="flagCircleSelected" [flagLineSelected]="flagLineSelected"></app-toolbar>
      
       </div>

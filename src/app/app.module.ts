@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DrawingComponent } from './drawing/drawing.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DrawingComponent
+    DrawingComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
