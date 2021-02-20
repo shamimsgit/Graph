@@ -10,7 +10,6 @@ import { BoardService } from '../board.service'
 export class DrawingComponent implements OnInit {
   flagCircle = false;
   flagLine = false;
-  once = false;
   colorArray = ["green", "yellow", "skyblue"];
   svgX = 10;
   svgY = 10;
@@ -75,7 +74,9 @@ export class DrawingComponent implements OnInit {
 
     this.centreShapeX = x;
     this.centreShapeY = y;
+    if (this.flagLine) {
     this.rectPath = "M " + this.centreShapeX + " " + this.centreShapeY;
+    }
 
 
   }
@@ -164,7 +165,6 @@ export class DrawingComponent implements OnInit {
   selectShapeCircle() {
     this.flagCircle = false;
     this.flagLine = false;
-    this.once = false;
     this.flagCircleSelected = false;
     this.flagLineSelected = false;
     this.flagCircleSelected = true;
@@ -174,7 +174,6 @@ export class DrawingComponent implements OnInit {
   selectShapeLine() {
     this.flagCircle = false;
     this.flagLine = false;
-    this.once = false;
     this.flagCircleSelected = false;
     this.flagLineSelected = false;
     this.flagLineSelected = true;
@@ -190,7 +189,6 @@ export class DrawingComponent implements OnInit {
 
     this.flagCircle = false;
     this.flagLine = false;
-    this.once = false;
     BoardService.selectedColor = 0;
     this.flagCircleSelected = false;
     this.flagLineSelected = false;
